@@ -12,17 +12,17 @@
     <br><a href="https://www.icloud.com/pages/04b17_awQyKD0oZ-Io3_Q-l8Q#daily_paragraph" target="_blank" title="ramblings">daily paragraph</a>
     
         <div class="container">
-            <form action="https://formspree.io/f/xbjbzwnn" method="POST" id="my-form">
+           <form id="my-form" action="https://formspree.io/f/xbjbzwnn" method="POST">
                 <div class="form-group">
-                    <input type="text" id="name" placeholder="me llamo" required>
+                    <input type="text" name="name" placeholder="me llamo" required/>
                 </div>
 
                 <div class="form-group">
-                    <input type="email" id="email" placeholder="e-mail" required>
+                    <input type="email" name="email" placeholder="e-mail" required/>
                 </div>
 
                 <div class="form-group">
-                    <textarea name="text" id="message" cols="30" rows="5" placeholder="¿qué pasa?" required></textarea>
+                    <textarea name="text" name="message" cols="30" rows="5" placeholder="¿qué pasa?" required></textarea>
                 </div>
 
                 <button type="submit">send</button>
@@ -45,14 +45,14 @@
                 }
               }).then(response => {
                 if (response.ok) {
-                  status.innerHTML = "Thanks for your submission!";
+                  status.innerHTML = "¡gracias!";
                   form.reset()
                 } else {
                   response.json().then(data => {
                     if (Object.hasOwn(data, 'errors')) {
                       status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
                     } else {
-                      status.innerHTML = "Oops! There was a problem submitting your form"
+                      status.innerHTML = "oops! There was a problem submitting your form"
                     }
                   })
                 }
