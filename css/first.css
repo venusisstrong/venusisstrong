@@ -35,11 +35,28 @@ button[type="submit"]:hover{
 }
 #status{
     margin-top: 10px;
-    color: red;
 }
 #status.success{
-    background-color: aquamarine;
+    color: red;
+    animation: status 4s ease forwards;
 }
 #status.error{
-    background-color: rgb(197, 127, 255);
+    color: red;
+    width: 60px;
+    background-color: rgb(36, 1, 65);
+    animation: status 4s ease forwards;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
 }
