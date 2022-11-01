@@ -19,8 +19,8 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 textarea{
-    max-width: 350px;
-    max-height: 200px;
+    max-width: 380px;
+    max-height: 120px;
     border-radius: 6px;
 }
 button[type="submit"]{
