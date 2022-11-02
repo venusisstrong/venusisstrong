@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>venus is strong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="https://img.onl/S9moOQ"/>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <h1>¿Hola? Digame.</h1>
+    <p>bésame</p>
+    <a href="https://www.icloud.com/pages/046X6MmHRc78_EoKOQezYqcsQ#cv" target="_blank" title="its downloadable tho">cv</a>
+    <br><a href="https://www.icloud.com/pages/04b17_awQyKD0oZ-Io3_Q-l8Q#daily_paragraph" target="_blank" title="ramblings">daily paragraph</a>
+    
+        <div class="container">
+           <form id="my-form" action="https://formspree.io/f/xbjbzwnn" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="me llamo" required/>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="e-mail" required/>
+                </div>
+
+                <div class="form-group">
+                    <textarea name="text" name="message" cols="30" rows="5" placeholder="¿qué pasa?                                 Selena Gomez [Tell Me Somthing i Don't Know]" required></textarea>
+                </div>
+
+                <button type="submit">send</button>
+            </form>
+        </div>
+        <div id="status"></div>
+
+        <script>
+            var form = document.getElementById("my-form");
+            
+            async function handleSubmit(event) {
+              event.preventDefault();
+              var status = document.getElementById("status");
+              var data = new FormData(event.target);
+              fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+              }).then(response => {
+                if (response.ok) {
+                  status.classList.add('success');
+                  status.innerHTML = "¡gracias!";
+                  form.reset()
+                } else {
+                  response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                      status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    } else {
+                      status.classList.add('error');
+                      status.innerHTML = "oops! There was a problem submitting your form"
+                    }
+                  })
+                }
+              }).catch(error => {
+                status.classList.add('error');
+                status.innerHTML = "Oops! There was a problem submitting your form"
+              });
+            }
+            form.addEventListener("submit", handleSubmit)
+        </script>
+
+        <div class="scroll-bg">
+          <div class="scroll-div">
+            <div class="scroll-object">
+              <mark>10262022</mark>
+              <p>today i noticed坐在爸爸對面吃飯會尷尬，又是不知道要說什麼，什麼都不想說也擠不出來，如果我的位子讓給mom坐，我在旁邊，會好得多，可以安心的沈默與吸食我的麵。</p><p>我的日子好短，假設再過三個小時去睡覺，早八睡到下午四點，醒來天已黑，剛吃第一餐，別人的睡覺時間就又到了，一天即將結束。我這樣寫好嗎，很白話，誰要看，該用天已黑或暮色低垂。吃了黑麥麵包塗上瑞士巧克力醬，又是糖。腦袋一直聽到那個女生叫我keep rambling，那我來針對昨天的list做個註解。話說這個很像Sarah Rothberg的real-time writing，酷。</p><p>rosalia, happy vibe, rare. Eilish also talked about what it was like to work with Rosalía. "It was great, she actually knows what she wants," Eilish said. "That’s why it was kind of refreshing 'cause I was like, 'Wow, you're the only other person I've really met that's like this”.</p><p>昨天的領悟與給自己的挑戰，lets fake a happy person，一方面受夠了自己帶給周遭低迷的氛圍，出口前會覺得到底該不該說（例：昨天在歌舞的舅舅 i’m scolded 故事），講到一半就想放棄，一方面想重心投回受歡迎、講話讓大家笑的懷抱（which in taiwan, was a long time ago, but in spain…）。這幾天看到了極為幽默的Ollie (Jolly)、善用尷尬個性剪輯的Amelia (Chicken shop date)、非常自信全身散發光芒沒有一絲假的Rosalia和說她沒有dream job，只要令她活著與快樂，anything is fine for me的Laura (Spanish)。這幾個人我都欣賞與羨慕，他們的個性與才華，overshadow在insta上漂亮纖細的人們，overshadow了我對外表的執著。</p><p>Being trapped in existential crisis is no longer rare, nowadays its EVERYONE’S problem/bug. Being happy and consent about themselves is soooooooo special.</p><p>話說聽到我爸跟娃娃在那邊喵實在是最奇妙的背景聲音。end。</p>
+              <mark>10272022</mark>
+              <p>i’m thankful for having a mom從不會在跟我講話時嘆氣，或至少我不記得了，她會讓我把腦袋輸通才開始反駁我，我會得到我該有的說話的尊重，i’m thankful for having a徹底顛倒的作息也不會被罵的 household。i’m thankful for 今晚因為開紅酒瓶而和老爸有交流的短暫還蠻不錯的時光，i’m thankful for finding the「i’m thankful for」opening act for today’s paragraph because its been a while since not having a grey-cloud-occupied mind. i’m thankful for每天擁有長時間的睡眠，今天從早10睡到晚上9點，雖然不知道怎麼搞的，這幾天總是充斥著各種夢境與過去的點頭之交，再搭配著拔山倒樹而來、著急的一股尿意。</p><p>我知道我要打破i’m thankful了，但他竟然用那樣的語氣跟我說話欸，「阿我看那個金髮女生和那個外國男生是一對齁，都走在一起，那個女生看起來就是德國人」一句平白無故好端端的話也能被他講的那麼惹人厭，那種自以為是，我一點都不想聽你反駁我，你這惹事精，只會讓徐家人擔心，我甚至擔心到禿頭，女生都該好好乖乖地活在舒適圈中，出國很好！但一定要有伴，不然一定會被搶劫或拖到暗巷強暴！你那麼愛冒險，我問你，萬一遇到一個高大強壯的黑人堵妳，妳會怎麼做？你期望我怎麼回答？什麼才是正確的答案？you racist worst-kind-of-grown-ups-who-will-never-earn-my-respect, ur not my mom, fuck off.</p><p>De todos modos, un es hermoso y enfadada día. ¡hasta luego!</p>
+              <mark>10282022</mark>
+              <p>*risa malvada* Hoy decidí下一個刺青的初始提案了，from broswer@baby berlin of course.    （請不要對我的語言夾雜嗤之以鼻）有鑒於對人類互動的極度著迷、好奇與厭惡，捷運上各各板著臉，我沒看你你也沒看我，不相干也毫不在乎，「下班好累只想靜默拜託別再有需要社會框架和禮儀的互動」他們的os我猜的，這個社會對於正向的非言語交流絕對不嫌多，有了兩個給自己看的刺青，下一個不妨獻給陌生人。一節車廂25個低頭滑手機的總有一個清幽人士會暫時放下黑洞讓自己喘口氣，天時地利人合如果我沒有穿太大件的衣服他也沒離我太遠，我的新刺青就能發揮它的作用，吸取那位幸運人士大概8秒的注意力，並肉笑皮不笑的快樂兩秒鐘，這樣就夠了。además 刺青規模預計是像michelle zauner的右手後臂。（are u checking out my tattoo? thanks *wink …… etc interactional phrase）</p><p>Hoy decidí deadline for mi freaking website, 12042022，再拖啊，MUY IMPORTANTE.</p><p>今天寫真久，注意力不太集中，又或者是開始有意識的措辭，不確定是不是件好事。最後了，同理心，今日份和madre談話的pequeño reflexión，如果輕易porque身邊人對你不如意就斬斷關係，那也太得不償失，站在他的角度想一下似乎就勉強通了，或是我也不會希望自己的兒女不先討論就刺青。Además, it's scary how we were all blinded when being unequally preferred, all signs was there and we even hear about 來自被冷落的同學的苦水。下次做個聰明人適時把陷在好處裡頭的自己拉出來，看看有沒有奇怪或錯誤的跡象。</p>
+            </div>
+          </div>
+        </div>
+</body>
+</html>
