@@ -60,3 +60,21 @@ button[type="submit"]:hover{
         pointer-events: none;
     }
 }
+.scroll-bg{
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    padding: 10px;
+    margin: auto;
+}
+.scroll-div{
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.scroll-object{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+    padding: 10px;
+}
