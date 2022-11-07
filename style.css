@@ -1,5 +1,9 @@
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 216, 216);
+    background-image: url('/img/foot.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 .container{
     width: 50%;
