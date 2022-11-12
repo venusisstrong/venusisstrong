@@ -2,16 +2,17 @@
     box-sizing: border-box;
 }
 .bio{
-    font-family: monospace;
+    font-family: 'Times New Roman', Times, serif;
 }
-#check{
+.more {
     display: none;
 }
-#check:checked ~ .more{
+.d-block {
     display: block;
 }
-.more{
-    display: none;
+button {
+    display: block;
+    margin-top: 0em;
 }
 label{
     color: rgb(0, 0, 0);
