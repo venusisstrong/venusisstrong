@@ -110,4 +110,6 @@ figure {
 }
 figcaption {
     text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }

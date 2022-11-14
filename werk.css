@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+figure {
+    display: inline-block;
+}
+figcaption {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
