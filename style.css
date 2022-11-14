@@ -105,11 +105,3 @@ button[type="submit"]:hover{
     font-size: 10px;
     padding: 10px;
 }
-figure {
-    display: inline-block;
-}
-figcaption {
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-}
