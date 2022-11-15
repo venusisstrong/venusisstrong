@@ -10,38 +10,51 @@
       html {
         background: url('/img/bg8.png') no-repeat center fixed;
         background-size: cover;
+        background-color: black;
       }
     </style>
 </head>
 <body>
- 
+
+  <div class="eyeicon">
   <a href="#">
     <figure>
       <img src="/img/eyeball.gif" width="80px" height="80px"/>
       <figcaption style="color:aqua;">prologue</figcaption>
     </figure>
   </a>
+ </div>
+
+ <div class="humanicon">
   <a href="#">
     <figure>
-      <img src="/img/human.gif" width="120px" height="110px"/>
+      <img src="/img/human.gif" width="110px" height="100px"/>
       <figcaption style="color:chartreuse;">move</figcaption>
     </figure>
   </a>
+ </div>
+  
+ <div class="brainicon">
   <a href="#">
     <figure>
       <img src="/img/brain.gif" width="100px" height="100px"/>
       <figcaption style="color:deeppink;">climax</figcaption>
     </figure>
   </a>
+ </div>
+  
+ <div class="caticon">
   <a href="#">
     <figure>
       <img src="/img/cat.gif" width="100px" height="100px"/>
       <figcaption style="color:gold;">finale</figcaption>
     </figure>
   </a>
+ </div>
 
   <!-- Trigger/Open The Modal -->
-<button id="myBtn">prologue</button>
+<button id="myBtn" style="background-color: transparent; color:aqua; border: none;"><img src="/img/eyeball.gif" width="80px" height="80px"><br>prologue</button>
+<button id="myBtn" style="background-color: transparent; color:chartreuse; border: none;"><img src="/img/human.gif" width="110px" height="100px"><br>move</button>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
