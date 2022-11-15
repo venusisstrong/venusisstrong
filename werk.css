@@ -1,14 +1,6 @@
 * {
     box-sizing: border-box;
 }
-figure {
-    display: inline-block;
-}
-figcaption {
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-}
 button {
   cursor: pointer;
   text-decoration: underline;
@@ -79,16 +71,17 @@ button {
 }
 
 /* The Close Button */
-.close,.close2 {
+.close,.close2,.close3,.close4 {
   color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus,.close2:hover,
-.close2:focus {
+.close:hover,.close:focus,
+.close2:hover,.close2:focus,
+.close3:hover,.close3:focus,
+.close4:hover,.close4:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -96,14 +89,14 @@ button {
 
 .modal-header {
   padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 .modal-body {padding: 2px 16px;}
 
 .modal-footer {
   padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
