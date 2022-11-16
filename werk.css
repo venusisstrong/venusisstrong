@@ -9,24 +9,24 @@ button {
 .eyeicon {
   position: fixed;
   top: 320px;
-  left: 430px;
+  left: 530px;
   transform: rotate(-10deg);
 }
 .humanicon {
   position: fixed;
   top: 220px;
-  left: 530px;
+  left: 630px;
   transform: rotate(-20deg);
 }
 .brainicon {
   position: fixed;
   top: 220px;
-  left: 660px;
+  left: 760px;
 }
 .caticon {
   position: fixed;
   top: 280px;
-  left: 810px;
+  left: 910px;
   transform: rotate(20deg);
 }
 /* The Modal (background) */
