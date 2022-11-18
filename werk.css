@@ -70,7 +70,7 @@ button {
 }
 /* The Close Button */
 .close,.close2,.close3,.close4 {
-  color: white;
+  color: transparent;
   float: right;
   font-size: 28px;
   font-weight: bold;
