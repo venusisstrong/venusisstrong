@@ -46,6 +46,7 @@ button {
 /* Modal Content */
 .modal-content {
   position: relative;
+  background-image: url("/img/foot.jpg");;
   background-color: #fefefe;
   margin: auto;
   padding: 0;
@@ -85,7 +86,6 @@ button {
 }
 .modal-header {
   padding: 2px 16px;
-  background-color: #ffffff;
   color: rgb(0, 0, 0);
 }
 .modal-body {
@@ -93,10 +93,8 @@ button {
 }
 .modal-footer {
   padding: 2px 16px;
-  background-color: #ffffff;
   color: rgb(0, 0, 0);
 }
-
 .eye-columns{
   float: left;
   width: 33.33%;
