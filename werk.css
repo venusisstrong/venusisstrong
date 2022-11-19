@@ -115,6 +115,7 @@ button {
 .modal-footer {
   padding: 2px 16px;
   color: rgb(0, 0, 0);
+  text-align: center;
 }
 .eye-columns{
   float: left;
