@@ -131,6 +131,11 @@ button {
   display: table;
   clear: both;
 }
+@media screen and (max-width:768px) {
+  .eye-columns{
+    width: 100%;
+  }
+}
 .o {
   width: 100%; /* or any custom size */
   height: 100%; 
