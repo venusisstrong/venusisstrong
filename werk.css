@@ -29,7 +29,7 @@ button {
   left: 60%;
   transform: rotate(20deg);
 }
-@media screen and (max-width:968px) {
+@media screen and (max-width:968px) { /* 4 icon wont crash to eachother */
   .eyeicon {
     top: 10%;
     left: 35%;
@@ -127,9 +127,12 @@ button {
   display: table;
   clear: both;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:768px) { /* phone */
   .eye-columns{
     width: 100%;
+  }
+  .modal-content {
+    width: 70%;
   }
 }
 .o { /* 100% fit image */
