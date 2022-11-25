@@ -40,9 +40,7 @@ button {
   transform: rotate(20deg);
 }
 
-@media screen and (max-width:968px) {
-
-  /* 4 icon wont crash to eachother */
+@media screen and (max-width:968px) {  /* 4 icon wont crash to eachother */
   .eyeicon {
     top: 10%;
     left: 35%;
@@ -68,28 +66,24 @@ button {
 .modal {
   display: none;
   position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  padding-top: 90px;;
-  /* Location of the box */
+  z-index: 1;  /* Sit on top */
+  /* padding-top: 90px;   (Location of the box) */
   left: 0;
   top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0);
-  /* Fallback color */
+  width: 100%;  /* Full width */
+  height: 100%;   /* Full height */
+  overflow: auto;  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
   
 }
 
 /* Modal Content */
 .modal-content {
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #fefefe;
   margin: auto;
   padding: 0;
@@ -108,7 +102,10 @@ button {
 /* brain Modal Content (split.js) */
 .brain-modal-content {
   box-sizing: border-box;
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #D4D0C8;
   margin: auto;
   padding: 8px;
@@ -132,7 +129,7 @@ button {
   }
 
   to {
-    top: 0;
+    top: -50;
     opacity: 1
   }
 }
@@ -144,7 +141,7 @@ button {
   }
 
   to {
-    top: 0;
+    top: -50;
     opacity: 1
   }
 }
@@ -204,9 +201,7 @@ button {
   clear: both;
 }
 
-@media screen and (max-width:768px) {
-
-  /* phone */
+@media screen and (max-width:768px) {  /* phone */
   .eye-columns {
     width: 100%;
   }
@@ -216,22 +211,19 @@ button {
   }
 }
 
-.o {
-  /* 100% fit image */
+.o {  /* 100% fit image */
   width: 100%;
   object-fit: contain;
 }
 
-.center {
-  /* centered image */
+.center {  /* centered image */
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
-.describe {
-  /* one sentence description */
+.describe {  /* one sentence description */
   color: blue;
 }
 
@@ -258,12 +250,12 @@ button {
 
 .gutter.gutter-horizontal {
   cursor: col-resize;
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+  background-image: url(/img/vertical.png);
 }
 
 .gutter.gutter-vertical {
   cursor: row-resize;
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
+  background-image: url(/img/horizontal.png);
 }
 
 .split.split-horizontal,
