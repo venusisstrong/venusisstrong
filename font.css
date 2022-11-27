@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Arial Rounded MT';
-    src: url('ArialRoundedMTBold.woff2') format('woff2'),
-        url('ArialRoundedMTBold.woff') format('woff');
+    src: url('/font/ArialRoundedMTBold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -9,8 +8,7 @@
 
 @font-face {
     font-family: 'Akaya Kanadaka';
-    src: url('AkayaKanadaka-Regular.woff2') format('woff2'),
-        url('AkayaKanadaka-Regular.woff') format('woff');
+    src: url('/font/AkayaKanadaka-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -18,8 +16,7 @@
 
 @font-face {
     font-family: 'Athelas';
-    src: url('Athelas-Italic.woff2') format('woff2'),
-        url('Athelas-Italic.woff') format('woff');
+    src: url('/font/Athelas-Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -27,8 +24,7 @@
 
 @font-face {
     font-family: 'burnfont-1.0Black';
-    src: url('burnfont-10Black.woff2') format('woff2'),
-        url('burnfont-10Black.woff') format('woff');
+    src: url('/font/burnfont-10Black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -36,8 +32,7 @@
 
 @font-face {
     font-family: 'Kavivanar';
-    src: url('Kavivanar-Regular.woff2') format('woff2'),
-        url('Kavivanar-Regular.woff') format('woff');
+    src: url('/font/Kavivanar-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -45,8 +40,7 @@
 
 @font-face {
     font-family: 'SourceHanSerifTC-Regular-Alphabetic';
-    src: url('SourceHanSerifTC-Regular-Alphabetic.woff2') format('woff2'),
-        url('SourceHanSerifTC-Regular-Alphabetic.woff') format('woff');
+    src: url('/font/SourceHanSerifTC-Regular-Alphabetic.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -54,8 +48,7 @@
 
 @font-face {
     font-family: 'Minecraftia';
-    src: url('Minecraftia-Regular.woff2') format('woff2'),
-        url('Minecraftia-Regular.woff') format('woff');
+    src: url('/font/Minecraftia-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -63,8 +56,7 @@
 
 @font-face {
     font-family: 'PT Mono';
-    src: url('PTMono-Bold.woff2') format('woff2'),
-        url('PTMono-Bold.woff') format('woff');
+    src: url('/font/PTMono-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -72,8 +64,7 @@
 
 @font-face {
     font-family: 'Wind';
-    src: url('Wind-Regular.woff2') format('woff2'),
-        url('Wind-Regular.woff') format('woff');
+    src: url('/font/Wind-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -81,9 +72,12 @@
 
 @font-face {
     font-family: 'HiraKakuStdN-W8-AlphaNum';
-    src: url('HiraKakuStdN-W8-AlphaNum.woff2') format('woff2'),
-        url('HiraKakuStdN-W8-AlphaNum.woff') format('woff');
+    src: url('/font/HiraKakuStdN-W8-AlphaNum.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
+}
+
+.chinese1234{
+    font-family: 'Wind';
 }
