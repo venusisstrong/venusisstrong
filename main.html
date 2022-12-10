@@ -8,7 +8,16 @@
   <link rel="shortcut icon" type="image/jpg" href="https://img.onl/S9moOQ" />
   <link rel="stylesheet" type="text/css" href="/main.css">
   <link rel="stylesheet" type="text/css" href="/font.css">
+  <link rel="preload" href="/font/ArialRoundedMTBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/font/AkayaKanadaka-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/font/Athelas-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/font/burnfont-10Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="/font/Kavivanar-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/font/SourceHanSerifTC-Regular-Alphabetic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/font/Minecraftia-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/font/PTMono-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/font/Wind-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/font/HiraKakuStdN-W8-AlphaNum.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <style>
     a {
       text-decoration: none;
@@ -26,7 +35,7 @@
 <body>
   <!-- vertical 1st -->
   <div id="v-1" class="split content">
-    <h1 style="margin-top: 0.17em; font-family: 'Kavivanar'; color: rgb(92, 176, 255);">Hola! this page is under
+    <h1 style="margin-top: 0.17em; margin-bottom: -0.5em; font-family:'Minecraftia' ; color: rgb(92, 255, 214);">Hola! this page is under
       construction, click "works" plz.</h1>
     <div class="bio">
       <p>A tiny digital-art craftsman in the big ass web. She is based in Taiwan.</p>
@@ -68,7 +77,9 @@
       <a style="background-color: rgb(105, 170, 255); color: chartreuse;" target="_blank" href="werk.html">works</a>
     </div>
     <!-- vertical 2nd:3 -->
-    <div id="v-2-3" class="split content split-horizontal" style="padding:0 ;">
+    <div id="v-2-3" class="split content split-horizontal"></div>
+    <!-- vertical 2nd:4 -->
+    <div id="v-2-4" class="split content split-horizontal" style="padding:0 ;">
       <img src="/img/myhead.png" width="150px">
     </div>
   </div>
@@ -177,7 +188,18 @@
       </div>
     </div>
     <!-- vertical 4th:4 -->
-    <div id="v-4-4" class="split content split-horizontal"></div>
+    <div id="v-4-4" class="split content split-horizontal">
+      <span style="font-family:'Kavivanar' ;">Kavivanar</span><br>
+      <span style="font-family:'Arial Rounded MT' ;">Arial Rounded MT</span><br>
+      <span style="font-family:'Akaya Kanadaka' ;">Akaya Kanadaka</span><br>
+      <span style="font-family:'Athelas' ;">Athelas</span><br>
+      <span style="font-family:'burnfont-1.0Black' ;">burnfont-1.0Black</span><br>
+      <span style="font-family:'SourceHanSerifTC-Regular-Alphabetic' ;">SourceHanSerifTC-Regular-Alphabetic</span><br>
+      <span style="font-family:'Minecraftia' ;">Minecraftia</span><br>
+      <span style="font-family:'PT Mono' ;">PT Mono</span><br>
+      <span style="font-family:'Wind' ;">Wind</span><br>
+      <span style="font-family:'HiraKakuStdN-W8-AlphaNum' ;">HiraKakuStdN-W8-AlphaNum</span>
+    </div>
   </div>
 
 
@@ -191,8 +213,8 @@
       direction: 'vertical',
       snapOffset: 0,
     });
-    Split(['#v-2-1', '#v-2-2', '#v-2-3'], {
-      sizes: [7, 83, 10],
+    Split(['#v-2-1', '#v-2-2', '#v-2-3', '#v-2-4'], {
+      sizes: [7, 43, 40, 10],
       gutterSize: 8,
       cursor: 'row-resize',
       snapOffset: 0,
