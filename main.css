@@ -116,14 +116,14 @@ button[type="submit"]:hover {
 }
 
 .scroll-bg {
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     width: 250px;
     padding: 10px;
     margin: 0;
 }
 
 .scroll-div {
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     /*border-style: solid;*/
     width: 250px;
     height: 215px;
@@ -143,7 +143,7 @@ button[type="submit"]:hover {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 
 .content {
@@ -180,3 +180,18 @@ button[type="submit"]:hover {
     width: 100%;
     object-fit: contain;
 }
+
+.centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+  }
+
+  .bg10 {
+    background-image: url('./img/bg3.png');
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }

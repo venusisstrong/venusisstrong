@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/jpg" href="https://img.onl/S9moOQ"/>
+    <link rel="shortcut icon" type="image/jpg" href="https://img.onl/S9moOQ" />
     <title>methods to avoid living</title>
     <style>
         * {
             box-sizing: border-box;
         }
-        body{
+        html{
+            height: 100%;
+        }
+        body {
             background: url('/img/bg12.png') no-repeat center fixed;
             background-size: cover;
+            position: relative;
+            min-height: 100%;
         }
-        .top{
+
+        .top {
             padding: 12px;
             color: rgb(0, 8, 255);
         }
-        .all_columns{
+
+        .all_columns {
             float: left;
             width: 25%;
             padding: 12px;
             min-height: 350px;
             text-align: left;
         }
-        .all_rows::after{
+
+        .all_rows::after {
             content: "";
             display: table;
             clear: both;
         }
-        @media screen and (max-width: 768px){
-            .all_columns{
+
+        footer {
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            .all_columns {
                 width: 100%;
             }
         }
     </style>
 </head>
+
 <body>
 
     <div class="top"><small>*all suggestions are objective, fight me.</small><br><small>* 💌 for tv shows.</small></div>
@@ -56,7 +74,7 @@
                 <li>table 19</li>
                 <li>soul</li>
                 <li>scott pilgrim vs the world</li>
-            </ul>  
+            </ul>
         </div>
         <div class="all_columns">
             <h3>movies <small><sub>*about phychos</sub></small>FOR pHyCHOs.<i><sup>*risa malvada*</sup></i></h3>
@@ -74,16 +92,17 @@
                 <li>taxi driver</li>
                 <li>black swan</li>
                 <li>silence of the lambs</li>
-            </ul>  
+            </ul>
         </div>
         <div class="all_columns">
-            <h3><small>still, nothing beats the power of a good drama.<br>(& the waves of emotions as if life is not complicated enough:))</small></h3>
+            <h3><small>still, nothing beats the power of a good drama.<br>(& the waves of emotions as if life is not
+                    complicated enough:))</small></h3>
             <ul style="list-style-type:none; padding-inline-start: 0px">
                 <li>into the wild</li>
                 <li>the power of the dog</li>
                 <li>her</li>
                 <li>霸王別姬</li>
-                <li>the white lotus💌</li>
+                <li>the white lotus s1💌</li>
                 <li>manchester by the sea</li>
                 <li>blue valentine</li>
                 <li>before midnight </li>
@@ -92,20 +111,33 @@
                 <li>lolita(1962)</li>
                 <li>the eternal sunshine of the spotless mind</li>
                 <li>12 angry man</li>
-            </ul>  
+                <li>good will hunting</li>
+            </ul>
         </div>
         <div class="all_columns">
-            <a href="https://youtu.be/ozqCzV6NMmM?t=495" target="_blank" style="color:black; text-decoration: none;"><h3><em>XTRA STRONG, BAKED TO GET YOU BAKED! its a rollercoster baby! GO MENTAL OR GO HOME. <del>throw a punch in the air oh AJJHHHAAHHhHHHh</del></em></h3></a>
+            <a href="https://youtu.be/ozqCzV6NMmM?t=495" target="_blank" style="color:black; text-decoration: none;">
+                <h3><em>XTRA STRONG, BAKED TO GET YOU BAKED! its a rollercoster baby! GO MENTAL OR GO HOME. <del>throw a
+                            punch in the air oh AJJHHHAAHHhHHHh</del></em></h3>
+            </a>
             <ul style="list-style-type:none; padding-inline-start: 0px">
                 <li>se7en</li>
                 <li>hamilton</li>
                 <li>pulp fiction</li>
                 <li>arcane💌</li>
                 <li>requiem for a dream</li>
-            </ul>  
+            </ul>
         </div>
     </div>
-    
+
+    <footer>
+        <div class="top"><small>*this document was last modified: </small><small id="demo"></small></div>
+    </footer>
+
+    <script>
+        let text = document.lastModified;
+        document.getElementById("demo").innerHTML = text;
+    </script>
 
 </body>
+
 </html>
