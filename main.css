@@ -187,11 +187,11 @@ button[type="submit"]:hover {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
-  }
+}
 
-  .bg10 {
+.bg10 {
     background-image: url('./img/bg3.png');
     background-size: 700px;
     background-repeat: no-repeat;
     background-position: center;
-  }
+}
