@@ -28,6 +28,7 @@ button {
     display: block;
     margin-top: -0.8em;
     margin-left: -0.4em;
+    margin-right: 1em;
     cursor: pointer;
 }
 
@@ -195,3 +196,9 @@ button[type="submit"]:hover {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.cookiebutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
