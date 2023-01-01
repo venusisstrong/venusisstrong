@@ -190,9 +190,30 @@ button[type="submit"]:hover {
     transform: translate(-50%, -50%);
 }
 
-.bg10 {
+.bg3 {
     background-image: url('./img/bg3.png');
     background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tatarm {
+    background-image: url('./img/tatarm.png');
+    background-size: 590px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tatleg {
+    background-image: url('./img/tatleg.png');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.myhead {
+    background-image: url('./img/myhead.png');
+    background-size: 150px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -201,4 +222,4 @@ button[type="submit"]:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
