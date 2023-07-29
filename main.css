@@ -218,6 +218,20 @@ button[type="submit"]:hover {
     background-position: center;
 }
 
+.rabbit {
+    background-image: url('./img/rabbit.jpg');
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wapu {
+    background-image: url('./img/wapu.jpg');
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .cookiebutton {
     display: flex;
     justify-content: center;
@@ -232,4 +246,8 @@ button[type="submit"]:hover {
     text-decoration: wavy overline rgb(244, 189, 189);
     line-height: 32px;
     color: rgb(255, 17, 0);
+}
+
+.fonttext {
+    background-color: #dd44ff;
 }
