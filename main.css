@@ -219,7 +219,7 @@ button[type="submit"]:hover {
 }
 
 .rabbit {
-    background-image: url('./img/rabbit.jpg');
+    background-image: url('./img/rabbit.png');
     background-size: 150px;
     background-repeat: no-repeat;
     background-position: center;
