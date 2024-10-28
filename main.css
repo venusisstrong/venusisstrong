@@ -9,15 +9,17 @@ body {
 
 body {
     padding: 9px;
-    background-color: #F6F6F6;
+    background-color: #C1A0BF;
 }
 
 .bio {
     font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 
 .more {
     display: none;
+    color: #ffffff;
 }
 
 .d-block {
@@ -148,8 +150,8 @@ button[type="submit"]:hover {
 }
 
 .content {
-    border: 1px solid #09ff00;
-    box-shadow: inset 0 1px 2px #ff0000;
+    border: 1px solid #816632;
+    box-shadow: inset 0 2px 5px #816632;
     background-color: rgb(255, 255, 255);
     padding: 10px;
 }
@@ -249,5 +251,5 @@ button[type="submit"]:hover {
 }
 
 .fonttext {
-    background-color: #dd44ff;
+    background-color: #9D2E2B;
 }
