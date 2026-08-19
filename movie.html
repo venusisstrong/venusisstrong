@@ -172,12 +172,26 @@
     </div>
 
     <footer>
-        <div class="top"><small>*this document was last modified: </small><small id="demo"></small></div>
+        <div class="top">
+            <small>*this document was last modified: </small>
+            <small id="demo"></small>
+            <small>in Taiwan</small>
+        </div>
     </footer>
 
-    <script>
-        let text = document.lastModified;
-        document.getElementById("demo").innerHTML = text;
+    <script> 
+    let date = new Date(document.lastModified);
+
+    let year = date.getFullYear();
+    let month = String(date.getMonth() + 1).padStart(2, '0');
+    let day = String(date.getDate()).padStart(2, '0');
+    let hours = String(date.getHours()).padStart(2, '0');
+    let minutes = String(date.getMinutes()).padStart(2, '0');
+    let seconds = String(date.getSeconds()).padStart(2, '0');
+
+    let text = `${year}.${month}.${day} ${hours}:${minutes}:${seconds}`;
+
+    document.getElementById("demo").innerHTML = text;
     </script>
 
 </body>
