@@ -179,7 +179,7 @@
 </footer>
 
 <script>
-async function getLastModified() {
+    async function getLastModified() {
     const demo = document.getElementById("demo");
 
     try {
@@ -193,17 +193,11 @@ async function getLastModified() {
             }
         );
 
-        console.log("GitHub API status:", response.status);
-
         if (!response.ok) {
-            const errorText = await response.text();
-            console.log("GitHub API response:", errorText);
             throw new Error(`GitHub API error: ${response.status}`);
         }
 
         const data = await response.json();
-
-        console.log("GitHub API data:", data);
 
         if (!data.length) {
             throw new Error("No commit found");
@@ -211,7 +205,7 @@ async function getLastModified() {
 
         const date = new Date(data[0].commit.committer.date);
 
-        const text = new Intl.DateTimeFormat(undefined, {
+        const parts = new Intl.DateTimeFormat("en-CA", {
             year: "numeric",
             month: "2-digit",
             day: "2-digit",
@@ -219,13 +213,20 @@ async function getLastModified() {
             minute: "2-digit",
             second: "2-digit",
             hour12: false
-        }).format(date);
+        }).formatToParts(date);
+
+        const get = type =>
+            parts.find(part => part.type === type).value;
+
+        const text =
+            `${get("year")}/${get("month")}/${get("day")} ` +
+            `${get("hour")}:${get("minute")}:${get("second")}`;
 
         demo.textContent = text;
 
     } catch (error) {
         console.error("Could not get last modified date:", error);
-        demo.textContent = error.message;
+        demo.textContent = "unable to load";
     }
 }
 
