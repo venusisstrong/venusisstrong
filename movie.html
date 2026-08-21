@@ -7,51 +7,75 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico?v=2"  />
     <title>methods to <del>avoid</del> living</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        html{
-            height: 100%;
-        }
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        background: url('/img/bg12.png') no-repeat center fixed;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .top {
+        padding: 12px;
+        color: rgb(0, 8, 255);
+    }
+
+    .all_rows {
+        height: calc(100vh - 90px);
+    }
+
+    .all_columns {
+        float: left;
+        width: 20%;
+        height: 100%;
+        padding: 12px;
+        text-align: left;
+        overflow-y: auto;
+    }
+
+    .all_rows::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0px;
+        width: 100%;
+    }
+
+    /* 手機版 */
+    @media screen and (max-width: 768px) {
         body {
-            background: url('/img/bg12.png') no-repeat center fixed;
-            background-size: cover;
-            position: relative;
-            min-height: 100%;
+            overflow-y: auto;
         }
 
-        .top {
-            padding: 12px;
-            color: rgb(0, 8, 255);
+        .all_rows {
+            height: auto;
         }
 
         .all_columns {
-            float: left;
-            width: 20%;
-            padding: 12px;
-            min-height: 350px;
-            text-align: left;
-        }
-
-        .all_rows::after {
-            content: "";
-            display: table;
-            clear: both;
+            float: none;
+            width: 100%;
+            height: auto;
+            overflow-y: visible;
         }
 
         footer {
-            position: absolute;
-            left: 0;
-            bottom: 20px;
-            width: 100%;
+            position: static;
         }
-
-        @media screen and (max-width: 768px) {
-            .all_columns {
-                width: 100%;
-            }
-        }
-    </style>
+    }
+</style>
 </head>
 
 <body>
@@ -59,8 +83,16 @@
     <div class="top"><small>*all suggestions are objective, fight me.</small><br><small>* 💌 for tv shows.</small></div>
     <div class="all_rows">
         <div class="all_columns">
-            <h3><small>an updated list: (2026. 8)</small></h3>
-            </a>
+            
+        </div>
+        <div class="all_columns">
+            
+        </div>
+        <div class="all_columns">
+            
+        </div>
+        <div class="all_columns">
+            <h3><small>in 2026</small></h3>
             <ul style="list-style-type:none; padding-inline-start: 0px">
                 <li>1. El Laberinto del Fauno</li>
                 <li>2. Giselle (The Royal Ballet, 2014)</li><br>
@@ -93,11 +125,10 @@
                 <li>- The Idol (series)</li>
                 <li>- Arcane (series)</li>
                 <li>- Dying for Sex (series)</li>
-                
-                
             </ul>
         </div>
         <div class="all_columns">
+            <h3><small>in 2022</small></h3>
             <h3><i>"movies to spark happiness because you are in a devestated human-existential crisis."</i></h3>
             <ul style="list-style-type:none; padding-inline-start: 0px">
                 <li>ハウルの動く城</li>
@@ -114,8 +145,6 @@
                 <li>the last emperor</li>
                 <li>true romance</li>
             </ul>
-        </div>
-        <div class="all_columns">
             <h3>movies <small><sub>*about phychos</sub></small>FOR pHyCHOs.<i><sup>*risa malvada*</sup></i></h3>
             <ul style="list-style-type:none; padding-inline-start: 0px">
                 <li>a clockwork orange</li>
@@ -133,8 +162,6 @@
                 <li>the stanford prison experiment</li>
                 <li>12 monkeys</li>
             </ul>
-        </div>
-        <div class="all_columns">
             <h3><small>still, nothing beats the power of a good drama.<br>(& the waves of emotions as if life is not
                     complicated enough:))</small></h3>
             <ul style="list-style-type:none; padding-inline-start: 0px">
@@ -156,8 +183,6 @@
                 <li>legends of the fall</li>
                 <li>the people vs. larry flynt</li>
             </ul>
-        </div>
-        <div class="all_columns">
             <a href="https://youtu.be/ozqCzV6NMmM?t=495" target="_blank" style="color:black; text-decoration: none;">
                 <h3><em>XTRA STRONG, BAKED TO GET YOU BAKED! its a rollercoster baby! GO MENTAL OR GO HOME. <del>throw a
                             punch in the air oh AJJHHHAAHHhHHHh</del></em></h3>
@@ -168,6 +193,7 @@
                 <li>arcane💌</li>
                 <li>requiem for a dream</li>
             </ul>
+            
         </div>
     </div>
 
