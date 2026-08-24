@@ -205,6 +205,13 @@ button[type="submit"]:hover {
     background-position: center;
 }
 
+.pink {
+    background-image: url('./img/pink.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .tatleg {
     background-image: url('./img/tatleg.png');
     background-size: cover;
@@ -286,4 +293,11 @@ button[type="submit"]:hover {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+#v-3-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5px;
 }
